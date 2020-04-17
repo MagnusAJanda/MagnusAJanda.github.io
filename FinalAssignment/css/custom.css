@@ -1,0 +1,203 @@
+/* general styles */
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.parallax {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* navbar styles */
+
+nav {
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  height: 80px;
+}
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+  z-index: 2000;
+}
+
+/* header styles */
+
+.top-header, .middle-header, .bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 15px;
+}
+.top-header {
+  background-image: url("../images/banner1.jpg");
+  opacity: 0.6;
+}
+.top-header .header-content h1 {
+  font-size: 4rem !important;
+}
+.middle-header {
+  background-image: url("../images/banner2.jpg");
+  opacity: 0.6
+}
+.middle-header .header-content {
+}
+.bottom-header {
+  background-image: url("../images/banner3.jpg");
+  opacity: 0.6
+}
+.bottom-header .header-content {
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 15px;
+}
+
+#portfolio h2, #skills h2, #about h2 {
+  padding: 40px 0 40px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-header, .medium-header, .bottom-header {
+    padding: 40px 10px;
+  }
+  #portfolio h2, #skills h2 {
+  padding: 25px 0 25px 0;
+}
+}
+
+/* portfolio styles */
+
+.portfolio-placement {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+}
+.portfolio .portfolio-boxes .project {
+  margin: 0;
+  padding: 0;
+}
+.portfolio ul.portfolio.portfolio-boxes {
+  margin-bottom: 0;
+}
+.portfolio .portfolio.portfolio-boxes figure {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+}
+.portfolio .portfolio.portfolio-boxes figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 1;
+}
+.portfolio .portfolio.portfolio-boxes figure figcaption::before, .portfolio .portfolio.portfolio-boxes figure figcaption::after {
+  pointer-events: none;
+}
+.portfolio .portfolio.portfolio-boxes figure figcaption, .portfolio .portfolio.portfolio-boxes figure a.project-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.portfolio .portfolio.portfolio-boxes figure a.project-link {
+  z-index: 0;
+}
+.portfolio .boxed-content {
+  background: white;
+  padding: 80px 15px;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+}
+.portfolio .portfolio-box {
+  padding: 15px;
+}
+#portfolio.col4 .project-title {
+  font-size: 1.1rem;
+}
+#portfolio.col4 .project-skill {
+  font-size: 0.75rem;
+  top: 47%;
+}
+#portfolio.col5 .project-title {
+  font-size: 1.1rem;
+}
+#portfolio.col5 .project-skill {
+  font-size: 0.75rem;
+  top: 47%;
+}
+/* skills styles */
+.skill-item {
+  padding: 15px;
+  text-align: center;
+}
+.project {
+  margin: 15px 0;
+}
+.project-title {
+  font-size: 1.5rem;
+}
+.project-skill {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+}
+.project-info {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 1rem;
+}
+.project-info .info {
+  margin-bottom: 15px;
+}
+.project-info .info p, .project-info .info a {
+  color: #aaaaaa;
+  font-weight: 500;
+}
+.project-info .info a:hover {
+  color: #ada49d;
+}
+.skill-item .icon-bg {
+  padding-top: 26px;
+  width: 80px;
+  height: 80px;
+  background: #ada49d;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+}
+.skill-item .icon-bg i {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+/* about */
+
+#about p {
+  font-size: 2rem;
+  padding: 0 0 50px 0;
+}
+
+/* footer styles */
+footer {
+  height: 150px;
+  background-color: #d2d2d2;
+}
